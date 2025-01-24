@@ -1,0 +1,51 @@
+<style>
+    .div1 img{
+      height: 180px;
+      width: 280px;
+    }
+    .div1 img:hover{border: 2px solid blue;}
+
+      .div1{ 
+        margin: auto;
+         
+      }
+      /* .div1 img{
+          width: 18%;
+          height: 18%;
+      } */
+      .div1-1,.div2-1,.div3-1,.div4-1{
+          padding: 15px;
+          display: flex;
+      }
+      .div1-1 img,.div2-1 img,.div3-1 img,.div4-1 img {
+          padding: 15px;
+
+      }
+</style>
+{%extends 'base.html'%}
+{%block content%}
+<div style="margin-left: 100px;" class="div1">
+    <div class="div1-1">
+        <img src="https://www.code-x.in/images/client/Tasalli.jpeg" alt="">
+        <img src="https://www.code-x.in/images/client/MABFM.jpg" alt="">
+        <img src="https://www.code-x.in/images/client/ITRC.jpg" alt="">
+        <img src="https://www.code-x.in/images/client/Janta%20cable.jpg" alt="">
+    </div>
+    <div class="div2-1">
+        <img src="https://www.code-x.in/images/client/Anmol.jpg" alt="">
+        <img src="https://www.code-x.in/images/client/Apollo%20MotorsSMALL.jpg" alt="">
+        <img src="https://www.code-x.in/images/client/Mantri_Motors_or%20Small.jpg" alt="">
+        <img src="https://www.code-x.in/images/client/Carsqure.jpg" alt="">
+    </div>
+    <div class="div3-1">
+        <img src="https://www.code-x.in/images/client/Globe%20Infotech.jpg" alt="">
+        <img src="https://www.code-x.in/images/client/Tresearch.png" alt="">
+        <img src="https://www.code-x.in/images/client/iEARN_logo.jpg" alt="">
+        <img style="padding-left: 70px; width: 150px; height: 100px;" src="https://www.code-x.in/images/client/Kaamdhenu.png" alt="">
+    </div>
+    <div class="div4-1">
+        <img src="https://www.code-x.in/images/client/Unique.png" alt="">
+        <img src="https://www.code-x.in/images/client/MJ.png" alt="">
+    </div>
+</div>
+{%endblock%}

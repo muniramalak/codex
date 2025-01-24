@@ -1,0 +1,49 @@
+<style>
+    h2,h4,strong,a,i{
+        color: #0156a7;
+    }
+</style>
+{%extends 'base.html'%}
+{%block content%}
+<h2 style="margin-top: 50px;">Contact Us</h2>
+<div class="div1" style="width: 1000px; margin-left: 100px; display: flex; justify-content: space-evenly;">
+<div class="col-xs-50 col-sm-6  address">
+    <address>
+        <h4><i class="fa fa-globe"></i> Our offices : </h4>
+    <strong>Head Office </strong><br>
+    102, Chinmay Aparment, Scheme No.94,<br>
+    Opp. Mayur Hospital, Ring Road, Indore <br>
+    Pincode: 452010<br> <br>
+    <strong>Branch Office </strong><br>
+    2B 805 H and M Royal, Kondhwa,<br>
+    Pune, Maharashtra <br>
+    Pincode: 411048<br>
+   
+   </address>    
+</div>
+<address style="">
+<br><br>
+<a>  <i class="fa fa-phone"></i><span class="reach-us-font"> 0731-4088816,  93019-70501</span> </a><br>
+<a><i class="fa fa-phone"></i> 78699-19890, 88178-11488<br>
+</a><a href="mailto:info.codex.in@gmail.com"> <i class="fa fa-envelope"></i> support@codex.in</a><br>
+</address>
+<div class="well well-sm">
+<div id="frmContact">
+  <div>
+    <form method="post">
+      {%csrf_token%}
+      {{forms.as_p}}
+      <button type="submit">Send Message</button>
+  </form>
+  </div>
+
+
+</div>
+</div>
+</div>
+<form>
+
+<iframe width="95%" height="400" style="margin-left: 80px; width: 730px;height: 400px; border:0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.403557746219!2d75.876393!3d22.713237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd18025dd0d9%3A0x250e9a75be2ca60d!2sCode-X+Technologies%2C+Godhra+Hwy%2C+CRP+Line%2C+South+Tukoganj%2C+Tukoganj%2C+Indore%2C+Madhya+Pradesh+452001!5e0!3m2!1sen!2sin!4v1408639197921" frameborder="2"></iframe>  
+
+</form>
+{%endblock%}
